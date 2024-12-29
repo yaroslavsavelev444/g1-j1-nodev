@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Визитка разработчика: ваши проекты, навыки и контакты">
+  <title>Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <h1 class="header-title">My Portfolio</h1>
+      <nav class="header-nav">
+        <a href="#about" class="header-link">About</a>
+        <a href="#projects" class="header-link">Projects</a>
+        <a href="#contact" class="header-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-container">
+      <h2 class="hero-title">Hi, I'm [Your Name]</h2>
+      <p class="hero-description">A Web Developer specializing in modern web technologies.</p>
+      <a href="#projects" class="hero-button">See My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-container">
+      <h2 class="section-title">About Me</h2>
+      <p class="about-text">
+        I'm a passionate developer with experience in building high-quality web applications.
+        My expertise includes JavaScript, React, and Node.js. I love solving complex problems and delivering great user experiences.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <!-- <section id="skills" class="skills">
+    <div class="skills-container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <img src="assets/html.svg" alt="HTML" class="skill-icon">
+          <h3 class="skill-name">HTML</h3>
+        </div>
+        <div class="skill-item">
+          <img src="assets/css.svg" alt="CSS" class="skill-icon">
+          <h3 class="skill-name">CSS</h3>
+        </div>
+        <div class="skill-item">
+          <img src="assets/js.svg" alt="JavaScript" class="skill-icon">
+          <h3 class="skill-name">JavaScript</h3>
+        </div>
+        <div class="skill-item">
+          <img src="assets/react.svg" alt="React" class="skill-icon">
+          <h3 class="skill-name">React</h3>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="skills" class="skills">
+    <div class="skills-container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-carousel">
+        <div class="carousel-item">HTML</div>
+        <div class="carousel-item">CSS</div>
+        <div class="carousel-item">JavaScript</div>
+        <div class="carousel-item">React</div>
+        <div class="carousel-item">Node.js</div>
+        <div class="carousel-item">MongoDB</div>
+        <!-- Add more technologies as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="projects-container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="assets/project1.png" alt="Project 1" class="project-image">
+          <h3 class="project-title">Project 1</h3>
+          <p class="project-description">Description of the project. Features and technologies used.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+        <!-- Repeat for other projects -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section id="newsletter" class="newsletter">
+    <div class="newsletter-container">
+      <h2 class="section-title">Subscribe to My Newsletter</h2>
+      <p class="newsletter-text">Get updates about my latest projects and articles directly in your inbox.</p>
+      <form id="newsletterForm" class="newsletter-form">
+        <input type="email" placeholder="Enter your email" class="newsletter-input">
+        <button type="submit" class="newsletter-button">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="contact-container">
+      <h2 class="section-title">Contact Me</h2>
+      <form id="contactForm" class="contact-form">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" id="name" name="name" class="form-input">
+
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" name="email" class="form-input">
+
+        <label for="message" class="form-label">Message</label>
+        <textarea id="message" name="message" rows="4" class="form-input"></textarea>
+
+        <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+        <button type="submit" class="form-button">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Project Modal -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <button id="closeModal" class="modal-close">&times;</button>
+      <h3 class="modal-title">Project Title</h3>
+      <img src="assets/project1.png" alt="Project Image" class="modal-image">
+      <p class="modal-description">Detailed description of the project goes here.</p>
+      <a href="#" class="modal-link">Visit Project</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+  <button id="backToTop" class="back-to-top">⬆️</button>
+</body>
+</html>
